@@ -51,7 +51,7 @@ public class MultiCastSender implements Runnable {
                                                address, this.groupPort);
                     sender.send(packet);
                     System.out.println("Sent: " + new String(data));
-                    Thread.sleep(100);
+                    Thread.sleep(10000);
                 }
             } catch (IOException ex) {
                 if (this.socket.isClosed())
